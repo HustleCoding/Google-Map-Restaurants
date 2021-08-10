@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      #map {
+        height: 100%;
+      }
+
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        height: 40px;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #fafafa;
+        text-align: center;
+        vertical-align: center;
+      }
+    </style>
+    <title>Maps API App</title>
+  </head>
+  <body>
+    <header>
+      <h2>Let's Eat!</h2>
+    </header>
+    <div id="map"></div>
+    <script src="hungry.js"></script>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBU8g_kx7tsSo2LrY_eH59vbuvmfna5UAw&callback=initMap&libraries=places"
+      type="text/javascript"
+    ></script>
+  </body>
+</html>
